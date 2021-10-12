@@ -24,15 +24,19 @@ Implement a ERC20 token that can only be minted by a list of auditors contained 
 
 ##### Preconditions
 Auditor is not yet in the whitelist
+
 Max cap is not reached
 
 ##### Flow
 Administrator validates auditor and incorporate it to the whitelist
+
 Auditor mint an amount of coins
+
 Auditor transfer the coins to different third parties
 
 ##### Postconditions:
 Auditor can't transfer more coins than he has minted. 
+
 Total supply of coins can't exceed max cap.
 
 
