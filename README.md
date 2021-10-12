@@ -23,8 +23,8 @@ Implement a ERC20 token that can only be minted by a list of auditors contained 
 ## Example workflow
 
 ##### Preconditions
-User has requested an insurance contract with some terms
-User has paid the premium for the insurance contract
+Auditor is not yet in the whitelist
+Max cap is not reached
 
 ##### Flow
 Administrator validates auditor and incorporate it to the whitelist
