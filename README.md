@@ -12,8 +12,28 @@ The idea is that coins are issued for not burning carbon: 1 carbon coin = 1 ton 
 2. Carbon coins behaves as bonds, with guaranteed rates (i.e. 5%) of return for a fixed amount of time (i.e. 10 years).
 3. Carbon coins are freely traded. At the end of the year it is the owner of each coin who receives the interest coupon (if not expired).
 
+## Scope of the MVP
 
+Implement a ERC20 token that can only be minted by a list of auditors contained in a whitelist.
 
+1. There is a single administrator who is the only one capable of adding / removing auditors from the whitelist.
+2. Auditors can mint as much coins as they want, but the total supply can't exceed a max cap of 36 billions.
+3. Auditors can only transfer as much coins as they mint. The can't transfer coins minted by other auditors.
+
+## Example workflow
+
+##### Preconditions
+User has requested an insurance contract with some terms
+User has paid the premium for the insurance contract
+
+##### Flow
+Administrator validates auditor and incorporate it to the whitelist
+Auditor mint an amount of coins
+Auditor transfer the coins to different third parties
+
+##### Postconditions:
+Auditor can't transfer more coins than he has minted. 
+Total supply of coins can't exceed max cap.
 
 
 
