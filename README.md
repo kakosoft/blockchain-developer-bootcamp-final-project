@@ -34,7 +34,7 @@ Auditor mint an amount of coins
 
 Auditor transfer the coins to different third parties
 
-##### Postconditions:
+##### Postconditions
 Auditor can't transfer more coins than he has minted. 
 
 Total supply of coins can't exceed max cap.
