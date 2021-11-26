@@ -1,6 +1,32 @@
-# blockchain-developer-bootcamp-final-project
+# Carbon Coin: An incentivation system for deep decarbonization
 
-## Carbon Coin: An incentivation system for deep decarbonization
+## Deployed version URL
+
+https://kakosoft.github.io/
+
+## How to run this project locally
+<b>Prerequisites</b>
+
+Node.js v16.10
+
+Truffle v5.4.12
+
+Ganache CLI v6.12.2 (ganache-core: 2.13.2) - port 8545
+
+openzeppelin/contracts version 4.3.2. Run: npm install @openzeppelin/contracts
+
+truffle console --network development
+truffle test to run unit tests
+
+Truffle network in port 9545
+
+## Screencast link
+https://...
+
+## Public Ethereum wallet for certification:
+0x...
+
+## Project description
 
 The goal of the project is to implement a basic PoC for the cryptocurrency proposed in <a href="https://en.wikipedia.org/wiki/The_Ministry_for_the_Future"> The Ministry of the Future</a> science-fiction book, also explained by the author in this <a href="https://www.ted.com/talks/kim_stanley_robinson_remembering_climate_change_a_message_from_the_year_2071">TED talk</a>.
 
@@ -39,5 +65,8 @@ Auditor can't transfer more coins than he has minted.
 
 Total supply of coins can't exceed max cap.
 
+## Future improvements
+
+Update the token from a ERC20 to a ERC1155 token that behaves as bonds, with guaranteed rates (i.e. 5%) of return for a fixed amount of time (i.e. 10 years).
 
 
