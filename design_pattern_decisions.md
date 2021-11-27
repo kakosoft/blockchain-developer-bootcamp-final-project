@@ -17,5 +17,5 @@ In the constructor of the contract two different roles are defined
     DEFAULT_ADMIN_ROLE
     MINTER_ROLE
 
-The modifier onlyRole is used to ensure that only admin can grant access to roles and that only minters can mint coins.
+The modifier <i>onlyRole()</i> is used to ensure that only admin can grant access to roles and that only minters can mint coins.
 
