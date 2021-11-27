@@ -21,10 +21,10 @@ truffle test to run unit tests
 Truffle network in port 9545
 
 ## Screencast link
-https://...
+https://www.loom.com/share/06653dba089f4cdd9e1dcbd8c624512e
 
 ## Public Ethereum wallet for certification:
-0x...
+0x13199b14712613E3412c039d204120AaFf7364Fe
 
 ## Project description
 

@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 
+/// @title Carbon Coin: An incentivation system for deep decarbonization
+/// @author kakosoft
+/// @notice ERC20 Coin with access control capabilities
+/// @dev Basic functionality implemented, requires further implementation
+
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol"; 
 
@@ -14,7 +19,8 @@ contract Carboni is ERC20, AccessControlEnumerable {
     }
 
     function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
-        // check that MAX_CAP is not exceeded before minting!
+        /// @notice only approved minters can mint coins
+        /// @dev checks that MAX_CAP is not exceeded before minting
 
         if (amount + totalSupply() <= MAX_CAP) {
                     _mint(to, amount);
